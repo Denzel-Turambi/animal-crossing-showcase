@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { getFishData } from './ApiCalls';
 
 function App() {
+  const [fishes, setFishes] = useState([]);
+
+  useEffect(() => {
+    getFishData()
+    .then(data => setFishes(data))
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <nav>
+      <h1>Animal Crossings: Fishipedia</h1>
+    </nav>
   );
 }
 
