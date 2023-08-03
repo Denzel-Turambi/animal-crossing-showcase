@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { getFishData } from './ApiCalls';
+import Fishes from './Fishes';
 import dummyFish from './dummyData';
 
 function App() {
@@ -10,12 +11,13 @@ function App() {
     getFishData()
     .then(data => setFishes(data))
   }, [])
-  console.log(fishes)
+  // console.log(fishes)
 
   return (
     <main>
       <nav>
         <h1>Animal Crossings: Fishipedia</h1>
+        <Fishes fishes={fishes}/>
       </nav>
     </main>
   );
