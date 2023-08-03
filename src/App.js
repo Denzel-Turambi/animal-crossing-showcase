@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import { getFishData } from './ApiCalls';
+import Fishes from './Fishes';
+import dummyFish from './dummyData';
 
 function App() {
+  const [fishes, setFishes] = useState([]);
+
+  useEffect(() => {
+    getFishData()
+    .then(data => setFishes(data))
+  }, [])
+  // console.log(fishes)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <nav className='nav'>
+        <h1 className ='logo-title'>Animal Crossings: Fishipedia</h1>
+      </nav>
+      <Fishes fishes={fishes}/>
+    </main>
   );
 }
 
