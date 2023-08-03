@@ -15,10 +15,10 @@ function App() {
 
   return (
     <main>
-      <nav>
-        <h1>Animal Crossings: Fishipedia</h1>
-        <Fishes fishes={fishes}/>
+      <nav className='nav'>
+        <h1 className ='logo-title'>Animal Crossings: Fishipedia</h1>
       </nav>
+      <Fishes fishes={fishes}/>
     </main>
   );
 }

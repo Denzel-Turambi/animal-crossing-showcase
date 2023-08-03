@@ -1,0 +1,13 @@
+.fish-container {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+  width: 90%;
+  margin-left: 3.5%;
+  border: 16px solid #55917F;
+  border-radius: 24px;
+  padding: 8px;
+  background-color: #FFF4E4;
+}

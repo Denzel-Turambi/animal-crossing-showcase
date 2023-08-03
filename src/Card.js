@@ -1,8 +1,10 @@
+import './Card.css';
+
 function Card({name, img, id}) {
 
   return (
-    <div>
-      <img src={img}/>
+    <div className="card" id={id}>
+      <img src={img} alt={name}/>
     </div>
   )
 
