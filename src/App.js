@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { getFishData } from './ApiCalls';
 import Fishes from './Fishes';
-import dummyFish from './dummyData';
+import { Router } from 'react-router-dom';
 
 function App() {
   const [fishes, setFishes] = useState([]);
