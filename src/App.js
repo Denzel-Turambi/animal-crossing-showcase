@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { getFishData } from './ApiCalls';
 import Fishes from './Fishes';
 import Focus from './Focus';
+import SavedFishes from './SavedFishes';
+import Nav from './Nav';
 import { Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,9 +19,7 @@ function App() {
 
   return (
     <main>
-      <nav className='nav'>
-        <h1 className ='logo-title'>Animal Crossings: Fishipedia</h1>
-      </nav> 
+      <Nav /> 
       <section className='all-fish-display'>
         <Routes>
           <Route path ="/" element={ 
@@ -27,6 +27,9 @@ function App() {
           } />
           <Route path = "/:name" element={
             <Focus/>
+          } />
+          <Route path='/saved-fishes' element={
+            <SavedFishes />
           } />
         </Routes>
       </section>
