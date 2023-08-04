@@ -2,10 +2,12 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { getFishData } from './ApiCalls';
 import Fishes from './Fishes';
-import { Router } from 'react-router-dom';
+import Focus from './Focus';
+import { Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [fishes, setFishes] = useState([]);
+  // const [singleFishname, setSingleFishName] = useState('')
 
   useEffect(() => {
     getFishData()
@@ -17,8 +19,17 @@ function App() {
     <main>
       <nav className='nav'>
         <h1 className ='logo-title'>Animal Crossings: Fishipedia</h1>
-      </nav>
-      <Fishes fishes={fishes}/>
+      </nav> 
+      <section className='all-fish-display'>
+        <Routes>
+          <Route path ="/" element={ 
+            <Fishes fishes={fishes}/>
+          } />
+          <Route path = "/:name" element={
+            <Focus/>
+          } />
+        </Routes>
+      </section>
     </main>
   );
 }
