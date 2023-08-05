@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import SavedFishCard from "./SavedFishCard";
+import PropTypes from 'prop-types';
 
 function SavedFishes(props) {
 
@@ -34,3 +35,10 @@ function SavedFishes(props) {
 }
 
 export default SavedFishes;
+
+SavedFishes.propTypes = {
+  props: PropTypes.shape({
+   saved: PropTypes.array.isRequired,
+   setSaved: PropTypes.func.isRequired
+  })
+}

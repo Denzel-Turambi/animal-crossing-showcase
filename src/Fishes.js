@@ -1,5 +1,6 @@
 import Card from "./Card";
 import './Fishes.css';
+import PropTypes from 'prop-types';
 
 function Fishes(props) {
   // console.log(props.fishes)
@@ -23,3 +24,9 @@ function Fishes(props) {
 }
 
 export default Fishes;
+
+Fishes.propTypes = {
+  props: PropTypes.shape({
+    fishes: PropTypes.array.isRequired
+  })
+}

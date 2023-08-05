@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getSingleFish } from "./ApiCalls";
 import { useParams } from "react-router-dom";
+import PropTypes from 'prop-types';
 import './Focus.css'
 
 function Focus(props) {
@@ -49,3 +50,12 @@ function Focus(props) {
 }
 
 export default Focus;
+
+Focus.propTypes = {
+  props: PropTypes.shape({
+    toggleSaved: PropTypes.func.isRequired,
+    saved: PropTypes.array.isRequired,
+    error: PropTypes.string.isRequired,
+    setError: PropTypes.func.isRequired
+  })
+}
