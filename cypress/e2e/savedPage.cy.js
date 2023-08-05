@@ -1,4 +1,4 @@
-describe('main page', () => {
+describe('Saved page', () => {
   beforeEach(() => {
     cy.intercept('GET', `https://api.nookipedia.com/nh/fish?&api_key=046bc4fc-dbb4-408b-9a12-81377a53adac`, {
       statusCode: 200,
