@@ -2,7 +2,7 @@ import Card from "./Card";
 import './Fishes.css';
 
 function Fishes(props) {
-  console.log(props.fishes)
+  // console.log(props.fishes)
   const allFishes = props.fishes;
   const fishCards = allFishes.map(fish => {
     return (

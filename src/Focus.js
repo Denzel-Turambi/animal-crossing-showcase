@@ -3,8 +3,9 @@ import { getSingleFish } from "./ApiCalls";
 import { useParams } from "react-router-dom";
 import './Focus.css'
 
-function Focus() {
+function Focus(props) {
   const [selectedFish, setSelectedFish] = useState({})
+  const [savedBool, setSavedBool] = useState(false);
 
   const {name} = useParams();
 
@@ -12,9 +13,6 @@ function Focus() {
     getSingleFish(name)
     .then(data => setSelectedFish(data))
   }, [name])
-
-  // console.log('FISH', selectedFish.north)
-
 
   return (
     <section className="focus-display">
@@ -35,6 +33,7 @@ function Focus() {
           <img className ="fish-image" src={selectedFish.render_url}/>
         </div>
       </div>
+      <button onClick={() => props.toggleSaved(selectedFish)}>Save Fish</button>
     </section>
   )
 }
