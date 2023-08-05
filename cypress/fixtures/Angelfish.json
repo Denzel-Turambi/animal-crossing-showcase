@@ -1,0 +1,80 @@
+{
+  "name": "Angelfish",
+  "url": "https://nookipedia.com/wiki/Angelfish",
+  "number": 36,
+  "image_url": "https://dodo.ac/np/images/c/cd/Angelfish_NH_Icon.png",
+  "render_url": "https://dodo.ac/np/images/6/69/Angelfish_NH.png",
+  "location": "River",
+  "shadow_size": "Small",
+  "rarity": "",
+  "total_catch": 20,
+  "sell_nook": 3000,
+  "sell_cj": 4500,
+  "tank_width": 1.0,
+  "tank_length": 1.0,
+  "catchphrases": [
+      "I caught an angelfish! That other fish told me to do it!"
+  ],
+  "north": {
+      "availability_array": [
+          {
+              "months": "May – Oct",
+              "time": "4 PM – 9 AM"
+          }
+      ],
+      "times_by_month": {
+          "1": "NA",
+          "2": "NA",
+          "3": "NA",
+          "4": "NA",
+          "5": "4 PM – 9 AM",
+          "6": "4 PM – 9 AM",
+          "7": "4 PM – 9 AM",
+          "8": "4 PM – 9 AM",
+          "9": "4 PM – 9 AM",
+          "10": "4 PM – 9 AM",
+          "11": "NA",
+          "12": "NA"
+      },
+      "months": "May – Oct",
+      "months_array": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+      ]
+  },
+  "south": {
+      "availability_array": [
+          {
+              "months": "Nov – Apr",
+              "time": "4 PM – 9 AM"
+          }
+      ],
+      "times_by_month": {
+          "1": "4 PM – 9 AM",
+          "2": "4 PM – 9 AM",
+          "3": "4 PM – 9 AM",
+          "4": "4 PM – 9 AM",
+          "5": "NA",
+          "6": "NA",
+          "7": "NA",
+          "8": "NA",
+          "9": "NA",
+          "10": "NA",
+          "11": "4 PM – 9 AM",
+          "12": "4 PM – 9 AM"
+      },
+      "months": "Nov – Apr",
+      "months_array": [
+          1,
+          2,
+          3,
+          4,
+          11,
+          12
+      ]
+  }
+}

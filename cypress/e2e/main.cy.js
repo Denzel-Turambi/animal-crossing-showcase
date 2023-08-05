@@ -19,7 +19,7 @@ describe('main page', () => {
     .get('#Anchovy > img').should('have.attr', 'src').should('include', 'https://dodo.ac/np/images/7/7f/Anchovy_%28Fish%29_NH_Icon.png')
     .get('#Angelfish > img').should('have.attr', 'src').should('include', 'https://dodo.ac/np/images/c/cd/Angelfish_NH_Icon.png')
     .get('#Arapaima > img').should('have.attr', 'src').should('include', 'https://dodo.ac/np/images/b/b1/Arapaima_NH_Icon.png')
-    cy.get('#Anchovy').click()
+    .get('#Anchovy').click()
     .get('.nav').should('be.visible')
     .get('.fish-container').should('not.exist')
     .get('.fish-icon').should('be.visible')
