@@ -4,16 +4,25 @@ import { getFishData } from './ApiCalls';
 import Fishes from './Fishes';
 import Focus from './Focus';
 import SavedFishes from './SavedFishes';
+import PageNotFound from './PageNotFound';
 import Nav from './Nav';
-import { Router, Routes, Route } from 'react-router-dom';
+import { Router, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
   const [fishes, setFishes] = useState([]);
   const [saved, setSaved] = useState([]);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     getFishData()
     .then(data => setFishes(data))
+    .catch(error => {
+      if(error.status === 500) {
+        setError('Oops! Looks like there is a server error.');
+      } else {
+        setError(error);
+      }
+    })
   }, [])
 
   const toggleSaved = (newFish) => {
@@ -25,6 +34,10 @@ function App() {
     }
     console.log('SAVED', saved)
 
+    if(error){
+      return(<h1 className ="error-message" >{"An error occurred while fetching data."}</h1>);
+    }
+
   return (
     <main>
       <Nav /> 
@@ -33,12 +46,14 @@ function App() {
           <Route path ="/" element={ 
             <Fishes fishes={fishes}/>
           } />
-          <Route path = "/:name" element={
-            <Focus toggleSaved={toggleSaved} saved={saved}/>
+          <Route path = "/fish/:name" element={
+            <Focus toggleSaved={toggleSaved} saved={saved} error={error} setError={setError}/>
           } />
           <Route path='/saved-fishes' element={
             <SavedFishes saved={saved} setSaved={setSaved}/>
           } />
+          <Route path="/404" element={<PageNotFound/>}/>
+          <Route path="*" element={<Navigate to= "/404"/>}/>
         </Routes>
       </section>
     </main>
