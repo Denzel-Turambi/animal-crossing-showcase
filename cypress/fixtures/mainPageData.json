@@ -1,0 +1,250 @@
+[
+  {
+      "name": "Anchovy",
+      "url": "https://nookipedia.com/wiki/Anchovy_(fish)",
+      "number": 56,
+      "image_url": "https://dodo.ac/np/images/7/7f/Anchovy_%28Fish%29_NH_Icon.png",
+      "render_url": "https://dodo.ac/np/images/1/19/Anchovy_%28Fish%29_NH.png",
+      "location": "Sea",
+      "shadow_size": "Small",
+      "rarity": "",
+      "total_catch": 0,
+      "sell_nook": 200,
+      "sell_cj": 300,
+      "tank_width": 1.0,
+      "tank_length": 1.0,
+      "catchphrases": [
+          "I caught an anchovy! Stay away from my pizza!"
+      ],
+      "north": {
+          "availability_array": [
+              {
+                  "months": "All year",
+                  "time": "4 AM – 9 PM"
+              }
+          ],
+          "times_by_month": {
+              "1": "4 AM – 9 PM",
+              "2": "4 AM – 9 PM",
+              "3": "4 AM – 9 PM",
+              "4": "4 AM – 9 PM",
+              "5": "4 AM – 9 PM",
+              "6": "4 AM – 9 PM",
+              "7": "4 AM – 9 PM",
+              "8": "4 AM – 9 PM",
+              "9": "4 AM – 9 PM",
+              "10": "4 AM – 9 PM",
+              "11": "4 AM – 9 PM",
+              "12": "4 AM – 9 PM"
+          },
+          "months": "All year",
+          "months_array": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+          ]
+      },
+      "south": {
+          "availability_array": [
+              {
+                  "months": "All year",
+                  "time": "4 AM – 9 PM"
+              }
+          ],
+          "times_by_month": {
+              "1": "4 AM – 9 PM",
+              "2": "4 AM – 9 PM",
+              "3": "4 AM – 9 PM",
+              "4": "4 AM – 9 PM",
+              "5": "4 AM – 9 PM",
+              "6": "4 AM – 9 PM",
+              "7": "4 AM – 9 PM",
+              "8": "4 AM – 9 PM",
+              "9": "4 AM – 9 PM",
+              "10": "4 AM – 9 PM",
+              "11": "4 AM – 9 PM",
+              "12": "4 AM – 9 PM"
+          },
+          "months": "All year",
+          "months_array": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+          ]
+      }
+  },
+  {
+      "name": "Angelfish",
+      "url": "https://nookipedia.com/wiki/Angelfish",
+      "number": 36,
+      "image_url": "https://dodo.ac/np/images/c/cd/Angelfish_NH_Icon.png",
+      "render_url": "https://dodo.ac/np/images/6/69/Angelfish_NH.png",
+      "location": "River",
+      "shadow_size": "Small",
+      "rarity": "",
+      "total_catch": 20,
+      "sell_nook": 3000,
+      "sell_cj": 4500,
+      "tank_width": 1.0,
+      "tank_length": 1.0,
+      "catchphrases": [
+          "I caught an angelfish! That other fish told me to do it!"
+      ],
+      "north": {
+          "availability_array": [
+              {
+                  "months": "May – Oct",
+                  "time": "4 PM – 9 AM"
+              }
+          ],
+          "times_by_month": {
+              "1": "NA",
+              "2": "NA",
+              "3": "NA",
+              "4": "NA",
+              "5": "4 PM – 9 AM",
+              "6": "4 PM – 9 AM",
+              "7": "4 PM – 9 AM",
+              "8": "4 PM – 9 AM",
+              "9": "4 PM – 9 AM",
+              "10": "4 PM – 9 AM",
+              "11": "NA",
+              "12": "NA"
+          },
+          "months": "May – Oct",
+          "months_array": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+          ]
+      },
+      "south": {
+          "availability_array": [
+              {
+                  "months": "Nov – Apr",
+                  "time": "4 PM – 9 AM"
+              }
+          ],
+          "times_by_month": {
+              "1": "4 PM – 9 AM",
+              "2": "4 PM – 9 AM",
+              "3": "4 PM – 9 AM",
+              "4": "4 PM – 9 AM",
+              "5": "NA",
+              "6": "NA",
+              "7": "NA",
+              "8": "NA",
+              "9": "NA",
+              "10": "NA",
+              "11": "4 PM – 9 AM",
+              "12": "4 PM – 9 AM"
+          },
+          "months": "Nov – Apr",
+          "months_array": [
+              1,
+              2,
+              3,
+              4,
+              11,
+              12
+          ]
+      }
+  },
+  {
+      "name": "Arapaima",
+      "url": "https://nookipedia.com/wiki/Arapaima",
+      "number": 44,
+      "image_url": "https://dodo.ac/np/images/b/b1/Arapaima_NH_Icon.png",
+      "render_url": "https://dodo.ac/np/images/8/89/Arapaima_NH.png",
+      "location": "River",
+      "shadow_size": "Huge",
+      "rarity": "Rare",
+      "total_catch": 50,
+      "sell_nook": 10000,
+      "sell_cj": 15000,
+      "tank_width": 3.0,
+      "tank_length": 2.0,
+      "catchphrases": [
+          "I caught an arapaima! How did it get here? Arapaiknow!"
+      ],
+      "north": {
+          "availability_array": [
+              {
+                  "months": "Jun – Sep",
+                  "time": "4 PM – 9 AM"
+              }
+          ],
+          "times_by_month": {
+              "1": "NA",
+              "2": "NA",
+              "3": "NA",
+              "4": "NA",
+              "5": "NA",
+              "6": "4 PM – 9 AM",
+              "7": "4 PM – 9 AM",
+              "8": "4 PM – 9 AM",
+              "9": "4 PM – 9 AM",
+              "10": "NA",
+              "11": "NA",
+              "12": "NA"
+          },
+          "months": "Jun – Sep",
+          "months_array": [
+              6,
+              7,
+              8,
+              9
+          ]
+      },
+      "south": {
+          "availability_array": [
+              {
+                  "months": "Dec – Mar",
+                  "time": "4 PM – 9 AM"
+              }
+          ],
+          "times_by_month": {
+              "1": "4 PM – 9 AM",
+              "2": "4 PM – 9 AM",
+              "3": "4 PM – 9 AM",
+              "4": "NA",
+              "5": "NA",
+              "6": "NA",
+              "7": "NA",
+              "8": "NA",
+              "9": "NA",
+              "10": "NA",
+              "11": "NA",
+              "12": "4 PM – 9 AM"
+          },
+          "months": "Dec – Mar",
+          "months_array": [
+              1,
+              2,
+              3,
+              12
+          ]
+      }
+  }
+]
