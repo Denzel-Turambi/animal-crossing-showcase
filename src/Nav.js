@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './Nav.css'
 
 function Nav() {
 
@@ -8,7 +9,7 @@ function Nav() {
         <h1 className ='logo-title'>Animal Crossings: Fishipedia</h1>
       </NavLink>
       <NavLink to={'/saved-fishes'}>
-        <button>Saved Fishes</button>
+        <button className="saved-button">Saved Fishes</button>
       </NavLink>
     </nav> 
   )

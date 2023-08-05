@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55917F;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.logo-title {
+  color: #FFF4E4;
+  margin: 16px;
+}
+
+.saved-button {
+  margin: 16px;
+  background-color: #FFF4E4;
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+}

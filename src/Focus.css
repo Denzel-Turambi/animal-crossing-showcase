@@ -40,6 +40,14 @@
   background-color: #55917F;
 }
 
+.save-button {
+  color: white;
+  background-color: #27233A;
+  border: 4px solid #505168;
+  border-radius: 10px;
+  margin: 8px;
+}
+
 @media screen and (max-width: 55em) {
   .focus-details {
     width: 80%;

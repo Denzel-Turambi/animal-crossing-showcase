@@ -44,7 +44,7 @@ function Focus(props) {
           <img className ="fish-image" src={selectedFish.render_url}/>
         </div>
       </div>
-      <button onClick={() => props.toggleSaved(selectedFish)}>Save Fish</button>
+      <button className="save-button" onClick={() => props.toggleSaved(selectedFish)}>Save Fish</button>
     </section>
   )
 }
