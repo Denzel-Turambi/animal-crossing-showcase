@@ -37,7 +37,7 @@ function App() {
             <Focus toggleSaved={toggleSaved} saved={saved}/>
           } />
           <Route path='/saved-fishes' element={
-            <SavedFishes />
+            <SavedFishes saved={saved} setSaved={setSaved}/>
           } />
         </Routes>
       </section>
