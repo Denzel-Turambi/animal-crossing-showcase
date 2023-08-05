@@ -1,18 +1,29 @@
 import { useState, useEffect } from "react";
 import { getSingleFish } from "./ApiCalls";
 import { useParams } from "react-router-dom";
+import PropTypes from 'prop-types';
 import './Focus.css'
 
 function Focus(props) {
   const [selectedFish, setSelectedFish] = useState({})
-  const [savedBool, setSavedBool] = useState(false);
 
   const {name} = useParams();
 
   useEffect(() => {
     getSingleFish(name)
     .then(data => setSelectedFish(data))
+    .catch(error => {
+      if(error.status === 500) {
+        props.setError('Oops! Looks like there is a server error.');
+      } else {
+        props.setError(error);
+      }
+    })
   }, [name])
+
+  if(props.error){
+    return(<h1 className ="error-message" >{"An error occurred while fetching data."}</h1>);
+  }
 
   return (
     <section className="focus-display">
@@ -39,3 +50,12 @@ function Focus(props) {
 }
 
 export default Focus;
+
+Focus.propTypes = {
+  props: PropTypes.shape({
+    toggleSaved: PropTypes.func.isRequired,
+    saved: PropTypes.array.isRequired,
+    error: PropTypes.string.isRequired,
+    setError: PropTypes.func.isRequired
+  })
+}

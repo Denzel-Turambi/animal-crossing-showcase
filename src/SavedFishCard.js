@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function SavedFishCard({name, img, id, deleteSaved}) {
   
   return (
@@ -9,3 +11,10 @@ function SavedFishCard({name, img, id, deleteSaved}) {
 }
 
 export default SavedFishCard;
+
+SavedFishCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  deleteSaved: PropTypes.func.isRequired
+}
