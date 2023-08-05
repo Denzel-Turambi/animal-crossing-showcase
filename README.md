@@ -1,6 +1,16 @@
 ## ABSTRACT
 Introducing "Animal Crossings: Fishipedia," the ultimate companion app for Animal Crossing: New Horizons fans. Dive into an extensive database of all the game's fish species, complete with details like name, price, and best fishing spots. Create personalized collections, mark caught fish, and plan your fishing expeditions. Explore the underwater world like never before and become a master angler in the virtual paradise. Happy fishing!
 
+## INSTALLATION INSTRUCTIONS
+1. Fork this repo, and clone it down into your local machine using the SSH key
+2. After cloning it down, `cd` into the project and run `npm install`*
+3. Once the installation is done, you can now run `npm start` to run the application in your web browser
+
+*If you want to run this application locally, you must apply for an access key at https://api.nookipedia.com/
+
+### or...
+Open the application by clicking [here](https://animal-crossing-showcase.vercel.app/)
+
 ## LEARNING GOALS
 Use the technology I’ve been working with over the course of the module to demonstrate mastery of the following:
 - React
@@ -39,13 +49,3 @@ Use the technology I’ve been working with over the course of the module to dem
 
 ## PREVIEW OF APPLICATION
 ![ezgif com-video-to-gif (6)](https://user-images.githubusercontent.com/122255250/258611618-d7e94bd8-300c-4e10-ab1e-d09b43d798ca.gif)
-
-## INSTALLATION INSTRUCTIONS
-1. Fork this repo, and clone it down into your local machine using the SSH key
-2. After cloning it down, `cd` into the project and run `npm install`*
-3. Once the installation is done, you can now run `npm start` to run the application in your web browser
-
-*If you want to run this application locally, you must apply for an access key at https://api.nookipedia.com/
-
-### or...
-Open the application by clicking [here](https://animal-crossing-showcase.vercel.app/)
